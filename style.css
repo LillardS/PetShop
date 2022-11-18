@@ -1,0 +1,346 @@
+* {
+    font-family: 'Caveat', Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    text-decoration: none;
+    color: inherit;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #353434;
+}
+
+button {
+    background: #353434;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+}
+
+section.pets button {
+    background: #353434;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header.landing {
+    background-image: url(images/petstore.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    height: 400px;
+}
+
+header.featured {
+    background-image: url(images/featured.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    height: 400px;
+}
+
+header.landing h1 {
+    padding-top: 200px;
+    padding-right: 800px;
+    margin: auto;
+    font-size: 36pt;
+    font-weight: 600;
+}
+
+header.featured h1 {
+    padding-top: 200px;
+    padding-right: 1500px;
+    margin: auto;
+    font-size: 36pt;
+}
+
+header.featured p {
+    padding-left: 1400px;
+    margin: auto;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+main {
+    max-width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+div.divider img {
+    width: 610px;
+    margin: 10px;
+}
+
+.cat img {
+    transform: rotate(60deg);
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin: auto;
+    padding: 25px;
+    background: #ababab;
+    max-width: 100%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 30pt;
+    padding: 20px;
+    margin: auto;
+}
+
+section h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+section.pets div.card {
+    width: 600px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+div.card img {
+    height: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+nav {
+    background: #580000;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+nav li {
+    width: 25%;
+}
+
+nav li a {
+    font-size: 24pt;
+}
+
+footer {
+    background: #580000;
+    padding: 20px;
+    color: white;
+    position: relative;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+
+section.info h2 {
+    text-align: center;
+    font-size: 40pt;
+}
+
+section.info p {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: 500;
+}
+
+section.info li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 16pt;
+}
+
+section.info img {
+    display: flex;
+    margin: auto;
+    height: 300px;
+    width: auto;
+    border-radius: 15px;
+}
+
+section.about img {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+section.about div.container {
+    display: flex;
+    margin: auto;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;
+    font-size: 20pt;
+}
+
+#wrapper { 
+    display: flex;
+    justify-content: center;
+}
+
+div.wrapper li{ 
+    width: 500px; 
+    height: auto; 
+    list-style: none; 
+    background-color: #353434; 
+    border-radius: 10px; 
+    margin: 20px; 
+    padding: 20px; 
+    color: white; 
+    display: flexbox; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+}
+
+#badge {
+     width: fit-content; 
+     height: fit-content; 
+     background-color: #580000; 
+     color: white; 
+     padding: 2px 2px; 
+     border-radius: 5px; 
+     margin-left: 10px; 
+     text-align: center; 
+     float: right; 
+}
+
+#items #badge { /* hides the count badge on the shopping list */ 
+    display: none; 
+}
+
+#container { 
+    margin: 50px;
+}
+
+div.wrapper img.product {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+div.shop {
+    text-align: center;
+    font-size: 24pt;
+}
+
+div.cart {
+    text-align: center;
+    font-size: 24pt;
+}
+
+section.form {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 16pt;
+}
+
+section.form h1 {
+    font-size: 30pt;
+}
+
+section.form textarea {
+    display: flex;
+    justify-content: center;
+    min-width: 600px;
+    min-height: 200px;
+    resize: none;
+    font-size: 16pt;
+}
+
+#data2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: auto;
+    font-size: 16pt;
+}
+
+section.form button {
+    background: #353434;
+    color: white;
+    width: fit-content;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
