@@ -89,6 +89,11 @@ main {
     padding: 0;
 }
 
+div.divider {
+    width: auto;
+    padding: 0;
+}
+
 div.divider img {
     width: 610px;
     margin: 10px;
@@ -160,11 +165,13 @@ div.card img {
     max-width: 200px;
     border-radius: 50%;
 }
-
+#navbar {
+    width: 100%;
+    height: 200px;
+}
 nav {
     background: #580000;
-    padding: 20px;
-    text-align: left;
+    padding: 10px;
     color: white;
     position: sticky;
     width: 100%;
@@ -172,7 +179,6 @@ nav {
     top: 0;
     left: 0;
 }
-
 nav ul {
     white-space: nowrap;
     display: flex;
@@ -181,7 +187,6 @@ nav ul {
     max-width: 1200px;
     margin: 0 auto;
     list-style-type: none;
-    justify-content: flex-end;
 }
 
 nav li {
@@ -189,7 +194,7 @@ nav li {
 }
 
 nav li a {
-    font-size: 24pt;
+    font-size: 20pt;
 }
 
 footer {
@@ -278,7 +283,7 @@ div.wrapper li{
      float: right; 
 }
 
-#items #badge { /* hides the count badge on the shopping list */ 
+#items #badge {  
     display: none; 
 }
 
