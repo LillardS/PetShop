@@ -90,13 +90,27 @@ main {
 }
 
 div.divider {
+    background: #353434;
+    border-top: #580000 5px solid;
+    border-bottom: #580000 5px solid;
     width: auto;
-    padding: 0;
+    position: relative;
+}
+
+div.divider.row {
+    display: flex;
+}
+
+div.divider.column {
+    flex: 33.33%;
+    padding: 5px;
 }
 
 div.divider img {
-    width: 610px;
-    margin: 10px;
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
 }
 
 .cat img {
@@ -199,7 +213,7 @@ nav li a {
 
 footer {
     background: #580000;
-    padding: 20px;
+    padding: 10px;
     color: white;
     position: relative;
     height: auto;
