@@ -113,6 +113,10 @@ div.divider img {
     display: flex;
 }
 
+.nav-img {
+    height: 25px;
+}
+
 .cat img {
     transform: rotate(60deg);
     display: flex;
@@ -283,6 +287,10 @@ div.wrapper li{
     justify-content: center; 
     align-items: center;
     text-align: center; 
+}
+
+div.wrapper h1 {
+    font-size: 36pt;
 }
 
 #badge {
