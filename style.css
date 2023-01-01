@@ -12,6 +12,12 @@ body {
     background: #353434;
 }
 
+main {
+    max-width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
 button {
     background: #353434;
     color: white;
@@ -21,37 +27,73 @@ button {
     display: flex;
     justify-content: center;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
 }
 
-section.pets button {
-    background: #353434;
-    color: white;
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
-    margin-top: 15px;
-    padding: 3px;
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    margin: auto 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: center;
-    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     border-radius: 10px;
-    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+div.card img {
+    height: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+div.wrapper li {
+    width: 500px;
+    height: auto;
+    list-style: none;
+    background-color: #353434;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.wrapper h1 {
+    font-size: 36pt;
 }
 
 header.landing {
     background-image: url(images/petstore.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin: auto;
-    text-align: center;
-    height: 400px;
-}
-
-header.featured {
-    background-image: url(images/featured.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,12 +111,24 @@ header.landing h1 {
     font-weight: 600;
 }
 
+header.featured {
+    background-image: url(images/featured.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    height: 400px;
+}
+
 header.featured h1 {
     padding-top: 200px;
     padding-right: 1500px;
     margin: auto;
     font-size: 36pt;
 }
+
 
 header.featured p {
     padding-left: 1400px;
@@ -83,10 +137,42 @@ header.featured p {
     font-weight: 600;
 }
 
-main {
-    max-width: 100%;
-    margin: auto;
-    padding: 0;
+#navbar {
+    width: 100%;
+    height: 200px;
+}
+
+nav {
+    background: #580000;
+    padding: 10px;
+    color: white;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+nav li {
+    width: 25%;
+}
+
+nav li a {
+    font-size: 20pt;
+}
+
+.nav-img {
+    height: 25px;
 }
 
 div.divider {
@@ -111,10 +197,6 @@ div.divider img {
     margin: auto;
     padding: 10px;
     display: flex;
-}
-
-.nav-img {
-    height: 25px;
 }
 
 .cat img {
@@ -142,34 +224,6 @@ section h3 {
     padding: 20px;
 }
 
-.column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-}
-
-.row {
-    margin: 0 -5px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    border-radius: 10px;
-}
-
 section.pets div.card {
     width: 600px;
     margin: auto;
@@ -178,53 +232,47 @@ section.pets div.card {
     padding: 20px;
 }
 
-div.card img {
-    height: 200px;
-    max-width: 200px;
-    border-radius: 50%;
+section.pets button {
+    margin-top: 15px;
 }
-#navbar {
-    width: 100%;
-    height: 200px;
+
+section.pets div.card h4 {
+    color: #580000;
 }
-nav {
-    background: #580000;
-    padding: 10px;
-    color: white;
-    position: sticky;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
-nav ul {
-    white-space: nowrap;
+
+section.form {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    list-style-type: none;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 16pt;
 }
 
-nav li {
-    width: 25%;
+section.form h1 {
+    font-size: 30pt;
 }
 
-nav li a {
-    font-size: 20pt;
+section.form textarea {
+    display: flex;
+    justify-content: center;
+    min-width: 600px;
+    min-height: 200px;
+    resize: none;
+    font-size: 16pt;
 }
 
-footer {
-    background: #580000;
-    padding: 10px;
+section.form button {
+    background: #353434;
     color: white;
-    position: relative;
+    width: fit-content;
     height: auto;
-    width: 100%;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 section.info h2 {
@@ -272,106 +320,38 @@ section.about div.container {
     text-align: center;
 }
 
-#wrapper { 
-    display: flex;
-    justify-content: center;
-}
-
-div.wrapper li{ 
-    width: 500px; 
-    height: auto; 
-    list-style: none; 
-    background-color: #353434; 
-    border-radius: 10px; 
-    margin: 20px; 
-    padding: 20px; 
-    color: white; 
-    display: flexbox; 
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center;
-    text-align: center; 
-}
-
-div.wrapper h1 {
-    font-size: 36pt;
-}
-
-#badge {
-     width: fit-content; 
-     height: fit-content; 
-     background-color: #580000; 
-     color: white; 
-     padding: 2px 2px; 
-     border-radius: 5px; 
-     margin-left: 10px; 
-     text-align: center; 
-     float: right; 
-}
-
-#items #badge {  
-    display: none; 
-}
-
-#container { 
-    margin: 50px;
-}
-
-div.wrapper img.product {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-div.shop {
-    text-align: center;
-    font-size: 24pt;
-}
-
-div.cart {
-    text-align: center;
-    font-size: 24pt;
-}
-
-section.form {
-    display: flex;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    font-size: 16pt;
-}
-
-section.form h1 {
-    font-size: 30pt;
-}
-
-section.form textarea {
-    display: flex;
-    justify-content: center;
-    min-width: 600px;
-    min-height: 200px;
-    resize: none;
-    font-size: 16pt;
-}
-
-#data2 {
-    display: flex;
-    flex-wrap: wrap;
+#market div.card {
+    position: relative;
+    flex-direction: column;
     width: 600px;
-    height: auto;
-    font-size: 16pt;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-section.form button {
-    background: #353434;
-    color: white;
-    width: fit-content;
-    height: auto;
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    padding: 10px;
+#market div.card h5 {
+    color: #580000;
+}
+
+#market div.card span {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#market div.card button {
+    margin-top: 10px;
+
+}
+
+footer {
+    background: #580000;
+    padding: 10px;
+    color: white;
+    position: relative;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
 }
