@@ -39,7 +39,24 @@
     </div>
     <main>
         <section class="products">
-            <div id="market"></div>
+            <h1 class="shop-header">Store</h1>
+                <div class="shop-items" id="market"></div>
+        </section>
+        <section class="container">
+            <h1 class="shop-header">Cart</h1>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Item</span>
+                <span class="cart-price cart-header cart-column">Price</span>
+                <span class="cart-quantity cart-header cart-column">Quantity</span>
+            </div>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <span class="cart-total-title">Total</span>
+                <span class="cart-total-price">$29.98</span>
+            </div>
+            <div class="space">
+                <button class="btn btn-purchase" type="button">Purchase</button>
+            </div>
         </section>
     </main>
     <div class="divider">
@@ -64,7 +81,9 @@
         </div>
     </footer>
 
+
     <script src="shop.js"></script>
+    <script src="store.js"></script>
 </body>
 
 </html>
