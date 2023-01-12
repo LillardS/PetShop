@@ -12,19 +12,23 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="featured.html">Featured</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="about.html">About Me</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="brand-title">Seth's Pet Shop!</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="featured.html">Featured</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
     </nav>
-    <header class="featured">
-        <h1>Featured Pets!</h1>
-        <p>Take a look at some of our featured furry friends!</p>
-    </header>
     <div class="divider">
         <div class="row">
             <div class="column">
@@ -42,140 +46,117 @@
         </div>
     </div>
     <main>
-        <section class="pets">
-            <br>
-            <div class="pet-cards">
+        <section class="container">
+            <div class="pet-items">
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Oscar</b></h4>
-                            <img src="images/dog_photo1.png" alt="Avatar" style="width:100%">
-                            <p>Oscar is a Labrador puppy looking for a forever home with an energetic family!</p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Oscar</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/dog_photo1.png">
+                        <span class="pet-description">Oscar is a Labrador puppy looking for a forever home with an
+                            energetic
+                            family!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Scruffy</b></h4>
-                            <img src="images/dog_photo2.png" alt="Avatar" style="width:100%">
-                            <p>Scruffy is a Terrier puppy looking for a forever home with a relaxing family!</p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Scruffy</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/dog_photo2.png">
+                        <span class="pet-description">Scruffy is a Terrier puppy looking for a forever home with a
+                            relaxing
+                            family!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Bongo</b></h4>
-                            <img src="images/cat_photo1.png" alt="Avatar" style="width:100%">
-                            <p>Bongo is a Manx cat looking for a forever home with plenty of friends to play with!</p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Bongo</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/cat_photo1.png">
+                        <span class="pet-description">Bongo is a Manx cat looking for a forever home with plenty of
+                            friends
+                            to play with!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Hopper</b></h4>
-                            <img src="images/rabbit_photo1.png" alt="Avatar" style="width:100%">
-                            <p>Hopper is a Golden Glavcot rabbit looking for a forever home with someone who will spend
-                                a
-                                lot of time with him!</p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Hopper</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/rabbit_photo1.png">
+                        <span class="pet-description">Hopper is a Golden Glavcot rabbit looking for a forever home with
+                            someone who will spend a lot of time with him!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Bella</b></h4>
-                            <img src="images/cat_photo2.png" alt="Avatar" style="width:100%">
-                            <p>Bella is a Japanese Bobtail cat looking for a forever home where he can relax alone all
-                                day!
-                            </p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Bella</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/cat_photo2.png">
+                        <span class="pet-description">Bella is a Japanese Bobtail cat looking for a forever home where
+                            he can relax alone all day!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Max</b></h4>
-                            <img src="images/dog_photo3.png" alt="Avatar" style="width:100%">
-                            <p>Max is a Jack Russel Terrier puppy looking for a forever home with a lot of outside space
-                                to
-                                play!</p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Max</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/dog_photo3.png">
+                        <span class="pet-description">Max is a Jack Russel Terrier puppy looking for a forever home with
+                            a lot of outside space to play!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Luna</b></h4>
-                            <img src="images/rabbit_photo2.png" alt="Avatar" style="width:100%">
-                            <p>Luna is a Checkered rabbit looking for a forever home with lots of toys to play with!</p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Luna</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/rabbit_photo2.png">
+                        <span class="pet-description">Luna is a Checkered rabbit looking for a forever home with lots of
+                            toys to play with!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Charlie</b></h4>
-                            <img src="images/rabbit_photo3.png" alt="Avatar" style="width:100%">
-                            <p>Charlie is a White Flemish rabbit looking for a forever home with lots of food for his
-                                appetite!</p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Charlie</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/rabbit_photo3.png">
+                        <span class="pet-description">Charlie is a White Flemish rabbit looking for a forever home with
+                            lots of food for his appetite!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Lucy</b></h4>
-                            <img src="images/dog_photo4.png" alt="Avatar" style="width:100%">
-                            <p>Lucy is a Cocker Spaniel looking for a forever home with someone to cuddle up next to
-                                every
-                                night!</p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Lucy</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/dog_photo4.png">
+                        <span class="pet-description">Lucy is a Cocker Spaniel looking for a forever home with someone
+                            to cuddle up next to every night!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Cooper</b></h4>
-                            <img src="images/cat_photo3.png" alt="Avatar" style="width:100%">
-                            <p>Cooper is an Egyptian Mau looking for a forever home with plenty of high places to climb
-                                to!
-                            </p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Cooper</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/cat_photo3.png">
+                        <span class="pet-description">Cooper is an Egyptian Mau looking for a forever home with plenty
+                            of high places to climb to!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Daisy</b></h4>
-                            <img src="images/cat_photo4.png" alt="Avatar" style="width:100%">
-                            <p>Daisy is an American Wirehair cat looking for a forever home with lots of sun bathing
-                                space!
-                            </p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Daisy</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/cat_photo4.png">
+                        <span class="pet-description">Daisy is an American Wirehair cat looking for a forever home with
+                            lots of sun bathing space!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
                 <div class="pet">
-                    <div class="card">
-                        <div class="container">
-                            <h4><b>Milo</b></h4>
-                            <img src="images/rabbit_photo4.png" alt="Avatar" style="width:100%">
-                            <p>Milo is a Fuzzy Lop rabbit looking for a forever home with someone who has the time to play with him all day!</p>
-                            <a href="contact.html"><button>Contact for Adoption Info...</button></a>
-                        </div>
+                    <span class="pet-title">Milo</span>
+                    <div class="pet-details">
+                        <img class="pet-image" src="images/rabbit_photo4.png">
+                        <span class="pet-description">Milo is a Fuzzy Lop rabbit looking for a forever home with someone
+                            who has the time to play with him all day!</span>
+                        <a href="contact.html"><button>Contact for Adoption Info...</button></a>
                     </div>
                 </div>
             </div>
