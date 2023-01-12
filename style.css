@@ -42,6 +42,7 @@ button {
     padding: 0 1.5em;
     padding-bottom: 20px;
     border-radius: 0 0 10px 10px;
+
 }
 
 .column {
@@ -63,14 +64,13 @@ button {
 .pet-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .card {
     padding: 10px;
     text-align: center;
     background-color: #f1f1f1;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
